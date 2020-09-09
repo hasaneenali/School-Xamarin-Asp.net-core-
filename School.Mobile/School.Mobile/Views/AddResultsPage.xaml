@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             FlowDirection="RightToLeft"
+             mc:Ignorable="d"
+            
+             x:Class="School.Mobile.Views.AddResultsPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label  VerticalOptions="Center"  Text=" اسم الطالب" />
+
+                    <Picker x:Name="PickerResult"  
+                       Title="اختر الاسم"
+                            VerticalOptions="CenterAndExpand"
+                            WidthRequest="200"
+                       SelectedIndexChanged="Picker_SelectedIndexChanged"
+                        ItemDisplayBinding="{Binding Name}" />
+                    
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label  VerticalOptions="Center"  Text=" عربي" />
+                    <Entry WidthRequest="200" Keyboard="Numeric"  TextChanged="EntryArabic_TextChanged"   VerticalOptions="Center" x:Name="EntryArabic"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label  VerticalOptions="Center"  Text=" الانكليزي" />
+                    <Entry WidthRequest="200" Keyboard="Numeric" TextChanged="EntryArabic_TextChanged" VerticalOptions="Center" x:Name="EntryEnglish"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label  VerticalOptions="Center"  Text=" الرياضيات" />
+                    <Entry WidthRequest="200" Keyboard="Numeric" VerticalOptions="Center" TextChanged="EntryArabic_TextChanged" x:Name="EntryMaths"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label  VerticalOptions="Center"  Text=" الاجتماعيات" />
+                    <Entry WidthRequest="200" Keyboard="Numeric" VerticalOptions="Center" TextChanged="EntryArabic_TextChanged" x:Name="EntrySociology"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label  VerticalOptions="Center"  Text=" النتيجه" />
+                    <Entry WidthRequest="200" Keyboard="Numeric"  IsReadOnly="True" VerticalOptions="Center" x:Name="EntryTotal"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label  VerticalOptions="Center"  Text="حاله النجاح" />
+                    <Entry WidthRequest="200"  IsReadOnly="True"  VerticalOptions="Center" x:Name="EntrySuccess"/>
+                </StackLayout>
+
+
+                <Button x:Name="BtnAdd" Text="الاضافه" Clicked="BtnAdd_Clicked"/>
+            </StackLayout>
+        </ScrollView>
+        
+    </ContentPage.Content>
+</ContentPage>

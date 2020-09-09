@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "dgSpecHash": "jxELXBcqg1gIzib5jtVi/H2IKkAamFbVwR2J7vpPIAw2zv5QBSe4HLj+qLb/4rtNBm9+jD97SBfOeS02IZ7+dw==",
+  "success": true,
+  "projectFilePath": "D:\\xamarin forms\\School\\School\\School.Mobile\\School.Mobile.iOS\\School.Mobile.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hasanen\\.nuget\\packages\\commonservicelocator\\2.0.2\\commonservicelocator.2.0.2.nupkg.sha512",
+    "C:\\Users\\hasanen\\.nuget\\packages\\mvvmlightlibs\\5.4.1\\mvvmlightlibs.5.4.1.nupkg.sha512",
+    "C:\\Users\\hasanen\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\hasanen\\.nuget\\packages\\plugin.permissions\\3.0.0.12\\plugin.permissions.3.0.0.12.nupkg.sha512",
+    "C:\\Users\\hasanen\\.nuget\\packages\\sqlite-net-pcl\\1.7.335\\sqlite-net-pcl.1.7.335.nupkg.sha512",
+    "C:\\Users\\hasanen\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.3\\sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",
+    "C:\\Users\\hasanen\\.nuget\\packages\\sqlitepclraw.core\\2.0.3\\sqlitepclraw.core.2.0.3.nupkg.sha512",
+    "C:\\Users\\hasanen\\.nuget\\packages\\sqlitepclraw.provider.dynamic_cdecl\\2.0.3\\sqlitepclraw.provider.dynamic_cdecl.2.0.3.nupkg.sha512",
+    "C:\\Users\\hasanen\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
+    "C:\\Users\\hasanen\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0-preview.8.20407.11\\system.componentmodel.annotations.5.0.0-preview.8.20407.11.nupkg.sha512",
+    "C:\\Users\\hasanen\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\hasanen\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\hasanen\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\hasanen\\.nuget\\packages\\webp.touch\\1.0.8\\webp.touch.1.0.8.nupkg.sha512",
+    "C:\\Users\\hasanen\\.nuget\\packages\\xam.plugin.connectivity\\4.0.0.190-beta\\xam.plugin.connectivity.4.0.0.190-beta.nupkg.sha512",
+    "C:\\Users\\hasanen\\.nuget\\packages\\xam.plugin.imagearray\\1.0.0\\xam.plugin.imagearray.1.0.0.nupkg.sha512",
+    "C:\\Users\\hasanen\\.nuget\\packages\\xam.plugin.media\\4.0.1.5\\xam.plugin.media.4.0.1.5.nupkg.sha512",
+    "C:\\Users\\hasanen\\.nuget\\packages\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
+    "C:\\Users\\hasanen\\.nuget\\packages\\xamarin.ffimageloading\\2.4.11.982\\xamarin.ffimageloading.2.4.11.982.nupkg.sha512",
+    "C:\\Users\\hasanen\\.nuget\\packages\\xamarin.ffimageloading.forms\\2.4.11.982\\xamarin.ffimageloading.forms.2.4.11.982.nupkg.sha512",
+    "C:\\Users\\hasanen\\.nuget\\packages\\xamarin.forms\\4.5.0.495\\xamarin.forms.4.5.0.495.nupkg.sha512",
+    "C:\\Users\\hasanen\\.nuget\\packages\\xamarin.simpleping\\1.4.0\\xamarin.simpleping.1.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}

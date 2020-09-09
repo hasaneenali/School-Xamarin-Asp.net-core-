@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             FlowDirection="RightToLeft"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="School.Mobile.Views.AddTeachersPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout>
+
+
+                    <Image
+                    Source="{Binding ImageSource }">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer  
+                            Command="{Binding ChangeImageCommand}"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+
+                    <Image x:Name="image1"  BackgroundColor="#F0F0F0"/>
+
+                    <Button
+                      x:Name="BtnTakePhoto"
+                      Text="Take Photo"
+                      BackgroundColor="Blue"
+                    TextColor="White"
+                     
+                      Clicked="BtnTakePhoto_Clicked"/>
+
+                    <Button
+                      x:Name="dataloca"
+                      Text="saveLocal"
+                      BackgroundColor="Blue"
+                      TextColor="White"
+                    
+                     Clicked="dataloca_Clicked"/>
+
+
+                    <Label Text="اسم التدريسي" />
+                    <Entry x:Name="EntryName" Text="{Binding Name}" Keyboard="Text" />
+
+                    <Label Text="عمر التدريسي" />
+                    <Entry x:Name="EntryAge" Text="{Binding Age}" Keyboard="Numeric" />
+
+
+                    <Label Text=" رقم الموبايل" />
+                    <Entry x:Name="EntryMobile" Text="{Binding Mobile}" Keyboard="Telephone" />
+
+
+                    <Label Text=" التخصص" />
+                    <Picker x:Name="PickerMaterialName"  
+                       Title="اختر التخصص"
+                        SelectedIndexChanged="PickerMaterialName_SelectedIndexChanged" 
+                        ItemDisplayBinding="{Binding Name}" />
+
+
+                    <ActivityIndicator IsRunning="{Binding IsRunning}"
+                                   IsVisible="{Binding IsRunning }"
+                                  
+                                   
+                                   HorizontalOptions="Center">
+
+                    </ActivityIndicator>
+
+                    <Button Text="الاضافه" x:Name="BtnAdd"  Command="{Binding SaveCommand}"/>
+                    <Button Text="اضافه بيانات محليه"  x:Name="BtnAddData"  Command="{Binding DataCommand}"/>
+                  
+
+
+                </StackLayout>
+            </StackLayout>
+            </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,9 @@
+D:\xamarin forms\School\School\School.Common\bin\Debug\netstandard2.0\School.Common.deps.json
+D:\xamarin forms\School\School\School.Common\bin\Debug\netstandard2.0\School.Common.dll
+D:\xamarin forms\School\School\School.Common\bin\Debug\netstandard2.0\School.Common.pdb
+D:\xamarin forms\School\School\School.Common\obj\Debug\netstandard2.0\School.Common.AssemblyInfoInputs.cache
+D:\xamarin forms\School\School\School.Common\obj\Debug\netstandard2.0\School.Common.AssemblyInfo.cs
+D:\xamarin forms\School\School\School.Common\obj\Debug\netstandard2.0\School.Common.dll
+D:\xamarin forms\School\School\School.Common\obj\Debug\netstandard2.0\School.Common.pdb
+D:\xamarin forms\School\School\School.Common\obj\Debug\netstandard2.0\School.Common.csproj.CoreCompileInputs.cache
+D:\xamarin forms\School\School\School.Common\obj\Debug\netstandard2.0\School.Common.csprojAssemblyReference.cache

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:viewModel="clr-namespace:School.Mobile.ViewModel"
+             mc:Ignorable="d"
+             FlowDirection="RightToLeft"
+             x:Class="School.Mobile.Views.MaterialsPage">
+
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal"  >
+            
+            <Button  Clicked="Button_Clicked" ImageSource="ic_action_add" />
+        </StackLayout>
+       
+    </NavigationPage.TitleView>
+
+
+    <ContentPage.Content>
+      
+        <StackLayout>
+
+            
+
+
+            <ListView 
+                x:Name="ListView1"
+                ItemsSource="{Binding _Material}" 
+                HasUnevenRows="True"
+                IsRefreshing="{Binding IsLoading}"
+                IsPullToRefreshEnabled="True"
+                ItemTapped="ListView1_ItemTapped"
+                RefreshCommand="{Binding RefreshCommand}"
+                SeparatorVisibility="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Label FontSize="20" TextColor="Black" Text="{Binding Name}"/>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+            <Button Text="رفع البيانات" x:Name="BtnUpload" Command="{Binding UploadCommand }"/>
+         
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

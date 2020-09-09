@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "aEoC7ZQFbTrCBa9moPfQT1yVrgoZ9Hu8HJYO2IVOf4FJBBxxWnsBHB948f0TaG5u2D5TUAFVH3ANH9GfOzeceA==",
+  "success": true,
+  "projectFilePath": "D:\\xamarin forms\\School\\School\\School.Common\\School.Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hasanen\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\hasanen\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\hasanen\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

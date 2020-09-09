@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             FlowDirection="RightToLeft"
+             x:Class="School.Mobile.Views.AddStudentsPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <ImageButton Source="noImage.png"
+                           HeightRequest="50"
+                           WidthRequest="50"
+                             Clicked="TapImg1_Tapped"
+                           x:Name="Img1">
+                   
+                    </ImageButton>
+
+
+                <Image x:Name="Image2" />
+
+                <Label Text="اسم الطالب" />
+                <Entry x:Name="EntryName" Text="{Binding Name}" Keyboard="Text" />
+
+                <Label Text="عمر الطالب" />
+                <Entry x:Name="EntryAge" Text="{Binding Age}" Keyboard="Numeric" />
+
+
+                <Label Text=" رقم الموبايل" />
+                <Entry x:Name="EntryMobile" Text="{Binding Mobile}" Keyboard="Telephone" />
+
+                <Label Text=" التخصص" />
+                <Picker x:Name="picker1"
+                  SelectedIndexChanged="picker1_SelectedIndexChanged"
+                 Title="اختر نوع الدراسه"
+                 TitleColor="Red">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>الابتدائيه</x:String>
+                            <x:String>المتوسطه</x:String>
+                            <x:String>الاعدديه</x:String>
+                           
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+
+
+                <Button Text="الاضافه" x:Name="BtnAdd" Clicked="BtnAdd_Clicked"/>
+
+            </StackLayout>
+        </ScrollView>
+       
+    </ContentPage.Content>
+</ContentPage>

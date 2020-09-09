@@ -1,0 +1,70 @@
+﻿@model School.Web.Data.Entities.Result
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>Result</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Arabic" class="control-label"></label>
+                <input asp-for="Arabic" class="form-control add " onkeyup="add()" />
+                <span asp-validation-for="Arabic" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="English" class="control-label"></label>
+                <input asp-for="English" class="form-control add " onkeyup="add()" />
+                <span asp-validation-for="English" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Maths" class="control-label"></label>
+                <input asp-for="Maths" class="form-control add " onkeyup="add()" />
+                <span asp-validation-for="Maths" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sociology" class="control-label"></label>
+                <input asp-for="Sociology" class="form-control add " onkeyup="add()" />
+                <span asp-validation-for="Sociology" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Total" class="control-label"></label>
+                <input asp-for="Total" class="form-control" id="total" />
+                <span asp-validation-for="Total" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+    <script>
+
+
+        function add() {
+            var sum = 0;
+            $(".add").each(function () {
+                var val = parseInt($(this).val())
+                sum += (!isNaN(val) ? val : 0);
+            });
+            $('#total').val(sum);
+        }
+
+
+    </script>
+
+}

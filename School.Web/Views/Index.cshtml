@@ -1,0 +1,28 @@
+﻿<input name="add" class="add" type="text">
+<br />
+<input name="add" class="add" type="text">
+<br />
+<input name="add" class="add" type="text">
+<br />
+<input name="add" class="add" type="text">
+<br />
+
+<input id="add" type="button" value="add" />
+
+
+<script>
+    function add() {
+        var sum = 0;
+        $(".add").each(function () {
+            sum += +this.value;
+        });
+        return sum; // an add function shouldn't really "alert"
+    }
+
+    $('#add').click(function () {
+        alert(add());
+    });
+
+
+
+</script>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             mc:Ignorable="d"
+             FlowDirection="RightToLeft"
+            
+             x:Class="School.Mobile.Views.TeachersPage">
+
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="End" >
+
+            <Button  Clicked="Button_Clicked" ImageSource="ic_action_add" />
+        </StackLayout>
+
+    </NavigationPage.TitleView>
+
+
+    <ContentPage.Content>
+
+        <StackLayout>
+
+           
+
+
+            <ListView 
+                x:Name="ListView1"
+                IsRefreshing="{Binding IsLoading}"
+                IsPullToRefreshEnabled="True"
+                ItemTapped="ListView1_ItemTapped"
+                RefreshCommand="{Binding RefreshCommand}"
+                ItemsSource="{Binding ListData2}" 
+                HasUnevenRows="True"
+              
+                SeparatorVisibility="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label FontSize="20" TextColor="Black" Text="{Binding Name}"/>
+                                <Label FontSize="20" TextColor="Black" Text="{Binding Age}"/>
+                                <Label FontSize="20" TextColor="Black" Text="{Binding Mobile}"/>
+                            
+                                
+                                <Label FontSize="20"  TextColor="Black" Text="{Binding Material.Name}"/>
+
+
+                                <!--ImageFullPath-->
+                                <ffimageloading:CachedImage
+                    Aspect="AspectFit"
+                    Source="{Binding ImageUrl}"
+                    LoadingPlaceholder= "LoaderImage"
+                    ErrorPlaceholder= "ErrorImage"
+                    CacheDuration= "50"
+                    RetryCount= "3"
+                    RetryDelay= "600"
+                    DownsampleToViewSize = "true"
+                    HeightRequest="50"
+                    WidthRequest="50"/>
+
+                                
+
+
+                      
+                            </StackLayout>
+                           
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+            <Button Text="تحميل  بيانات محليه"  x:Name="BtnAddData"  Command="{Binding UploadData}"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

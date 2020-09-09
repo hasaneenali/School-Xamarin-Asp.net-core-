@@ -1,0 +1,48 @@
+﻿@model School.Web.Data.Entities.Result
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Result</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Arabic)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Arabic)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.English)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.English)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Maths)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Maths)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Sociology)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Sociology)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Total)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Total)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

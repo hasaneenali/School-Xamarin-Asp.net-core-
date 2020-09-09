@@ -1,0 +1,103 @@
+﻿@model IEnumerable<School.Web.Data.Entities.Result>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Student.Name)
+            </th>
+            <th>
+               صوره الطالب
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Arabic)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.English)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Maths)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sociology)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Total)
+            </th>
+            <th>
+                النتيجه
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Student.Name)
+            </td>
+
+            <td>
+                @if (!string.IsNullOrEmpty(item.Student.ImageUrl))
+                {
+                    <img src="@Url.Content(item.Student.ImageUrl)" alt="Image"
+                         style="width: 75px; height: 75px; max-width: 100%; height: auto;" />
+                }
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Arabic)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.English)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Maths)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sociology)
+            </td>
+            <td>
+
+
+                @Html.DisplayFor(modelItem => item.Total)
+
+
+            </td>
+
+
+            <td>
+                @if (item.Total >= 50)
+
+                {
+                    <label class="label-success">ناجح</label>
+
+                }
+
+                else
+                {
+                    <label class="label-success">راسب</label>
+                }
+
+
+            </td>
+
+            <td>
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
